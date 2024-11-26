@@ -1,0 +1,122 @@
+* {
+  color: white;
+  -webkit-user-select: none;
+}
+
+.header {
+  display: flex;
+	background-color: #1d1f25;
+	height: 4vh;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset 0 -3px 0 0 #0a0a0a;
+	padding: 0px 5vh;
+}
+
+.header h1 {
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 550;
+	font-style: italic;
+}
+
+.main_container {
+  display: flex;
+  background-color: greenyellow;
+  height: 96vh;
+}
+
+/* containers  */
+
+.game_container {
+  text-align: center;
+  display: flex;
+  background-color: #0487E2;
+  width: 34%;
+}
+
+.game_header p {
+  display: flex;
+  background-color: #3c4150;
+}
+
+.left_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0669af;
+  width: 33%;
+  box-sizing: border-box;
+  border-right: 3px black solid;
+}
+
+.left_header {
+  background-color: #1b2938;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.right_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0669af;
+  width: 33%;
+  box-sizing: border-box;
+  border-left: 3px black solid;
+}
+
+.right_header {
+  background-color: #1b2938;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
+
+.right_tabs {
+  background-color: #2a507c;
+  align-items: center;
+  display: flex;
+}
+
+.right_tabs p {
+	flex: 1;
+	background-color: #3c4150;
+	border-bottom: black 3px solid;
+  padding: 3vh;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.right_tabs p:not(:last-child) {
+	border-right: black 3px solid;
+	/* Borda direita para todos os h3, exceto o último */
+}
+
+.left_tabs {
+  background-color: #2a507c;
+  align-items: center;
+  display: flex;
+}
+
+.left_tabs p {
+	flex: 1;
+	background-color: #3c4150;
+	border-bottom: black 3px solid;
+  padding: 3vh;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-align: center;
+	transition: all 0.3s ease;
+}
+
+.left_tabs p:not(:last-child) {
+	border-right: black 3px solid;
+	/* Borda direita para todos os h3, exceto o último */
+}
