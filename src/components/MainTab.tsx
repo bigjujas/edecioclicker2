@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { formatNumber } from './utilities';
 import './MainTab.css';
 import { Skin } from './SkinsTab';

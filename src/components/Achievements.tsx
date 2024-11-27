@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { GameState } from './MainTab';
 import { Upgrade } from './UpgradesTab';
-import { Skin } from './SkinsTab';
 import './Achievements.css';
 
 export interface Achievement {
@@ -26,7 +25,7 @@ const initialAchievements: Achievement[] = [
         id: 2,
         name: "Melhoria 💪",
         description: "Compre seu primeiro upgrade.",
-        condition: (gameState, upgrades) => upgrades.some(upgrade => upgrade.level >= 1),
+        condition: (_gameState, upgrades) => upgrades.some(upgrade => upgrade.level >= 1),
         unlocksSkinId: 2,
         unlocked: false,
     },
@@ -42,7 +41,7 @@ const initialAchievements: Achievement[] = [
         id: 4,
         name: "Rei do Upgrade 🦾",
         description: "Atingir o nível 5 no upgrade de clique.",
-        condition: (gameState, upgrades) => upgrades.some(upgrade => upgrade.id === 1 && upgrade.level >= 5),
+        condition: (_gameState, upgrades) => upgrades.some(upgrade => upgrade.id === 1 && upgrade.level >= 5),
         unlocksSkinId: 4,
         unlocked: false,
     },

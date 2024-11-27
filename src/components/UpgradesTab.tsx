@@ -23,7 +23,7 @@ const initialUpgrades: Upgrade[] = [
         baseCost: 10,
         cost: 10,
         boost: 1,
-        effect: (gameState, setGameState, level) => {
+        effect: (_gameState, setGameState, level) => {
             setGameState((prev) => ({
                 ...prev,
                 coinsPerClick: prev.coinsPerClick + 1 * Math.pow(1.1, level - 1),
@@ -38,7 +38,7 @@ const initialUpgrades: Upgrade[] = [
         baseCost: 100,
         cost: 100,
         boost: 1,
-        effect: (gameState, setGameState, level) => {
+        effect: (_gameState, setGameState, level) => {
             setGameState((prev) => ({
                 ...prev,
                 coinsPerSecond: prev.coinsPerSecond + 1 * Math.pow(1.1, level - 1),

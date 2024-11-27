@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MainTab, { GameState, initialState } from './components/MainTab';
 import UpgradesTab, { Upgrade } from './components/UpgradesTab';
 import Profile from './components/Profile';
