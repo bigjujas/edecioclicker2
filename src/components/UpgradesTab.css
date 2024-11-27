@@ -1,0 +1,57 @@
+.upgrade_container {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    transition: all 0.1s ease;
+    border: black 2px solid;
+}
+
+.upgrade_effect,
+.upgrade_name,
+.upgrade_cost,
+.upgrade_level {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 20px;
+    flex: 1;
+    min-width: 0;
+    border: black 1px solid;
+}
+
+.upgrade_effect {
+    background-color: #006eff;
+    flex-grow: 1.3;
+}
+
+.upgrade_name {
+    background-color: wheat;
+    flex-grow: 2.5;
+}
+
+.buyable {
+    background-color: #6cfd6c;
+}
+
+.expensive {
+    background-color: #c54949;
+}
+
+.upgrade_level {
+    background-color: #006eff;
+}
+
+.upgrade_container:hover {
+    transform: scale(1.02);
+    cursor: pointer;  
+    filter: brightness(0.90);
+  }
+  
+  .upgrade_container:active {
+    transform: scale(0.95);
+    filter: brightness(1.2);
+  }

@@ -5,8 +5,8 @@
 
 .header {
   display: flex;
-	background-color: #1d1f25;
-	height: 4vh;
+	background-color: #1f1f1f;
+	height: 7vh;
 	justify-content: center;
 	align-items: center;
 	box-shadow: inset 0 -3px 0 0 #0a0a0a;
@@ -16,15 +16,31 @@
 .header h1 {
 	color: #ffffff;
 	text-align: center;
-	font-size: 14px;
+	font-size: 26px;
 	font-weight: 550;
 	font-style: italic;
+  letter-spacing: 1px;
+}
+
+.header h1 span {
+  color:#0487E2;
+  margin-right: 2px;
 }
 
 .main_container {
   display: flex;
   background-color: greenyellow;
-  height: 96vh;
+  height: 93vh;
+}
+
+/* Utility */
+
+.tab_active {
+  filter: brightness(1.1);
+}
+
+.tab_inactive {
+  filter: brightness(0.85);
 }
 
 /* containers  */
@@ -44,79 +60,45 @@
 .left_container {
   display: flex;
   flex-direction: column;
-  background-color: #0669af;
+  background-color: #454a75;
   width: 33%;
   box-sizing: border-box;
   border-right: 3px black solid;
 }
 
-.left_header {
-  background-color: #1b2938;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 3px solid black;
-}
-
 .right_container {
   display: flex;
   flex-direction: column;
-  background-color: #0669af;
+  background-color: #75c6ff;
   width: 33%;
   box-sizing: border-box;
   border-left: 3px black solid;
 }
 
-.right_header {
-  background-color: #1b2938;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 3px solid black;
-}
-
-.right_tabs {
+.tabs {
   background-color: #2a507c;
   align-items: center;
   display: flex;
 }
 
-.right_tabs p {
+.tabs p {
 	flex: 1;
-	background-color: #3c4150;
+	background-color: #3a3a3a;
 	border-bottom: black 3px solid;
   padding: 3vh;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	font-weight: 700;
 	text-align: center;
 	transition: all 0.3s ease;
 }
 
-.right_tabs p:not(:last-child) {
+.tabs p:not(:last-child) {
 	border-right: black 3px solid;
 	/* Borda direita para todos os h3, exceto o último */
 }
 
-.left_tabs {
-  background-color: #2a507c;
-  align-items: center;
-  display: flex;
-}
-
-.left_tabs p {
-	flex: 1;
-	background-color: #3c4150;
-	border-bottom: black 3px solid;
-  padding: 3vh;
-	font-size: 1.2rem;
-	font-weight: 700;
-	text-align: center;
-	transition: all 0.3s ease;
-}
-
-.left_tabs p:not(:last-child) {
-	border-right: black 3px solid;
-	/* Borda direita para todos os h3, exceto o último */
+.tabs p:hover {
+  cursor: pointer;
+  display: inline-block;
+  filter: brightness(1.12);
 }

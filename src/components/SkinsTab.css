@@ -1,0 +1,28 @@
+.skins_tab img {
+    width: 100px;
+    height: auto;
+}
+
+.skins_tab {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.skins_container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    margin: 3vh 0vh;
+}
+
+.skins_container h1 {
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #2a3b4e;
+    border-radius: 15px;
+    border: black 2px solid;
+    font-size: 32px;
+    font-weight: 700;
+}
